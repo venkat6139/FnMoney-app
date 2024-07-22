@@ -2,6 +2,49 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features
+User registration and login
+Protected routes
+Responsive design with CSS
+Simple authentication with JWT
+
+## Technologies
+Frontend: React (Class Components), React Router, Axios, CSS
+Backend: Node.js, Express, SQLite
+Styling: CSS, Bootstrap (optional)
+
+## Project Structure
+client/ - Contains the React frontend application
+server/ - Contains the Node.js backend application
+
+## Frontend Components
+
+## Landing Page
+Route: /landing
+Component: LandingPage
+Description: Displays navigation links to different pages. Only accessible if logged in.
+
+## Registration Page
+Route: /register
+Component: RegistrationForm
+Description: Allows users to create a new account.
+Usage: Handles user registration by sending a POST request to the backend.
+
+## Login Page
+Route: /login
+Component: LoginForm
+Description: Allows users to log in to their account.
+Usage: Handles user login and token storage for authentication.
+
+## Assessment Tasks Page
+Route: /assessment-tasks
+Component: AssessmentForm
+Description: A protected page where users can view or complete assessment tasks.
+
+## Private Routes
+Component: PrivateRoute
+Description: Ensures that users must be authenticated to access certain routes. Redirects to the login page if not authenticated.
+
 ## Available Scripts
 
 In the project directory, you can run:
